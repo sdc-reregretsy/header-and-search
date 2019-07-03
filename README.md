@@ -1,13 +1,13 @@
-# Project Name
+# RegrEtsy Navbar and Search
 
-> Project description
+> Implement navigation header and search microservice for an Etsy clone. Will be packaged with other microservices to approximate a functional item detail page.
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - https://github.com/regretsy-hratx42/header-and-search
+  - https://github.com/regretsy-hratx42/image-carousel
+  - https://github.com/regretsy-hratx42/cnebs-reviews
+  - https://github.com/regretsy-hratx42/item-details
 
 ## Table of Contents
 
@@ -17,7 +17,10 @@
 
 ## Usage
 
-> Some usage instructions
+> Some usage instructions:
+> npm install
+> start server with following: npm run server-dev
+> Navigate to site by going to localhost:3000 (port subject to change)
 
 ## Requirements
 
