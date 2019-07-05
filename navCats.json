@@ -315,6 +315,366 @@
           "subcategories": []
         }
       ]
+    },
+    {
+      "name": "Clothing & Shoes",
+      "categories": [
+        {
+          "name": "Women's",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Women's Clothing",
+              "bold": true
+            },
+            {
+              "name": "Dresses",
+              "bold": false
+            },
+            {
+              "name": "Tops & Tees",
+              "bold": false
+            },
+            {
+              "name": "Skirts",
+              "bold": false
+            },
+            {
+              "name": "Pants & Capris",
+              "bold": false
+            },
+            {
+              "name": "Sweaters",
+              "bold": false
+            },
+            {
+              "name": "Shorts",
+              "bold": false
+            },
+            {
+              "name": "Swimwear",
+              "bold": false
+            },
+            {
+              "name": "Women's Shoes",
+              "bold": true
+            },
+            {
+              "name": "Sandals",
+              "bold": false
+            },
+            {
+              "name": "All Women's",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Men's",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Men's Clothing",
+              "bold": true
+            },
+            {
+              "name": "Shirts",
+              "bold": false
+            },
+            {
+              "name": "Sweaters",
+              "bold": false
+            },
+            {
+              "name": "Shorts",
+              "bold": false
+            },
+            {
+              "name": "Men's Shoes",
+              "bold": true
+            },
+            {
+              "name": "All Men's",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Kids' & Baby",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Baby Girl's Clothing",
+              "bold": true
+            },
+            {
+              "name": "Girls' Clothing",
+              "bold": true
+            },
+            {
+              "name": "Dresses",
+              "bold": false
+            },
+            {
+              "name": "Skirts",
+              "bold": false
+            },
+            {
+              "name": "Tops",
+              "bold": false
+            },
+            {
+              "name": "Jackets & Coats",
+              "bold": false
+            },
+            {
+              "name": "Sweaters",
+              "bold": false
+            },
+            {
+              "name": "Baby Boys' Clothing",
+              "bold": true
+            },
+            {
+              "name": "Boys' Clothing",
+              "bold": true
+            },
+            {
+              "name": "Tops",
+              "bold": false
+            },
+            {
+              "name": "Jackets & Coats",
+              "bold": false
+            },
+            {
+              "name": "Sweaters",
+              "bold": false
+            },
+            {
+              "name": "Girls' Shoes",
+              "bold": true
+            },
+            {
+              "name": "Boots",
+              "bold": false
+            },
+            {
+              "name": "Boys' Shoes",
+              "bold": true
+            },
+            {
+              "name": "Boots",
+              "bold": false
+            },
+            {
+              "name": "All Kids' & Baby",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Bags & Purses",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Backpacks",
+              "bold": true
+            },
+            {
+              "name": "Handbags",
+              "bold": true
+            },
+            {
+              "name": "Clutches & Evening Bags",
+              "bold": false
+            },
+            {
+              "name": "Shoulder Bags",
+              "bold": false
+            },
+            {
+              "name": "Diaper Bags",
+              "bold": true
+            },
+            {
+              "name": "Luggage & Duffel Bags",
+              "bold": true
+            },
+            {
+              "name": "Phone Cases",
+              "bold": true
+            },
+            {
+              "name": "All Bags & Purses",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Home & Living",
+      "categories": [
+        {
+          "name": "Home",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Home Decor",
+              "bold": true
+            },
+            {
+              "name": "Wall Decor",
+              "bold": false
+            },
+            {
+              "name": "Decorative Pillows",
+              "bold": false
+            },
+            {
+              "name": "Picture Frames & Displays",
+              "bold": false
+            },
+            {
+              "name": "Candles & Holders",
+              "bold": false
+            },
+            {
+              "name": "Clocks",
+              "bold": false
+            },
+            {
+              "name": "Vases",
+              "bold": false
+            },
+            {
+              "name": "Wreaths & Door Hangers",
+              "bold": false
+            },
+            {
+              "name": "Rugs",
+              "bold": true
+            },
+            {
+              "name": "Furniture",
+              "bold": true
+            },
+            {
+              "name": "Bedding",
+              "bold": true
+            },
+            {
+              "name": "Bathroom",
+              "bold": true
+            },
+            {
+              "name": "Outdoor & Gardening",
+              "bold": true
+            },
+            {
+              "name": "Storage & Organization",
+              "bold": true
+            },
+            {
+              "name": "Office",
+              "bold": true
+            },
+            {
+              "name": "Lighting",
+              "bold": true
+            },
+            {
+              "name": "Kitchen & Dining",
+              "bold": true
+            },
+            {
+              "name": "Food & Drink",
+              "bold": true
+            },
+            {
+              "name": "Spirituality & Religion",
+              "bold": true
+            },
+            {
+              "name": "All Home",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Bath & Beauty",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Bath Accessories",
+              "bold": true
+            },
+            {
+              "name": "Makeup & Cosmetics",
+              "bold": true
+            },
+            {
+              "name": "Skin Care",
+              "bold": true
+            },
+            {
+              "name": "Hair Care",
+              "bold": true
+            },
+            {
+              "name": "Essential Oils",
+              "bold": true
+            },
+            {
+              "name": "Fragrances",
+              "bold": true
+            },
+            {
+              "name": "Soaps & Bath Bombs",
+              "bold": true
+            },
+            {
+              "name": "Sex Toys",
+              "bold": true
+            },
+            {
+              "name": "All Bath & Beauty",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Pet Supplies",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Pet Collars & Leashes",
+              "bold": true
+            },
+            {
+              "name": "Pet Furniture",
+              "bold": true
+            },
+            {
+              "name": "Pet Clothing & Shoes",
+              "bold": true
+            },
+            {
+              "name": "Pet Bedding",
+              "bold": true
+            },
+            {
+              "name": "Pet Carries & Houses",
+              "bold": true
+            },           
+            {
+              "name": "All Pet Supplies",
+              "bold": true
+            }
+          ]
+        }
+      ]
     }
   ]
 }
