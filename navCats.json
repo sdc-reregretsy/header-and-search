@@ -1,0 +1,320 @@
+{
+  "departments": [
+    {
+      "name": "Jewelry & Accessories",
+      "categories": [
+        {
+          "name": "Accessories",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Hats & Caps",
+              "bold": true
+            },
+            {
+              "name": "Hair Accessories",
+              "bold": true
+            },
+            {
+              "name": "Headbands",
+              "bold": false
+            },
+            {
+              "name": "Fascinators & Mini Hats",
+              "bold": false
+            },
+            {
+              "name": "Wreaths & Tiaras",
+              "bold": false
+            },
+            {
+              "name": "Sunglasses & Eyewear",
+              "bold": true
+            },
+            {
+              "name": "Scarves & Wraps",
+              "bold": true
+            },
+            {
+              "name": "Belts & Suspenders",
+              "bold": true
+            },
+            {
+              "name": "Keychains & Lanyards",
+              "bold": true
+            },
+            {
+              "name": "Umbrellas & Rain Accessories",
+              "bold": true
+            },
+            {
+              "name": "All Acccessories",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Bags & Purses",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Backpacks",
+              "bold": true
+            },
+            {
+              "name": "Handbags",
+              "bold": true
+            },
+            {
+              "name": "Clutches & Evening Bags",
+              "bold": false
+            },
+            {
+              "name": "Shoulder Bags",
+              "bold": false
+            },
+            {
+              "name": "Diaper Bags",
+              "bold": true
+            },
+            {
+              "name": "Luggage & Duffel Bags",
+              "bold": true
+            },
+            {
+              "name": "Phone Cases",
+              "bold": true
+            },
+            {
+              "name": "All Bags & Purses",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Necklaces",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Pendants",
+              "bold": true
+            },
+            {
+              "name": "Chokers",
+              "bold": true
+            },
+            {
+              "name": "Charm Necklaces",
+              "bold": true
+            },
+            {
+              "name": "Monogram & Name Necklaces",
+              "bold": true
+            },
+            {
+              "name": "Beaded Necklaces",
+              "bold": true
+            },
+            {
+              "name": "Chains",
+              "bold": true
+            },
+            {
+              "name": "Bib Necklaces",
+              "bold": true
+            },
+            {
+              "name": "Tassel Necklaces",
+              "bold": true
+            },
+            {
+              "name": "All Necklaces",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Rings",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Stackable Rings",
+              "bold": true
+            },
+            {
+              "name": "Statement Rings",
+              "bold": true
+            },
+            {
+              "name": "Bands",
+              "bold": true
+            },
+            {
+              "name": "Signet Rings",
+              "bold": true
+            },
+            {
+              "name": "Solitaire Rings",
+              "bold": true
+            },
+            {
+              "name": "Midi Rings",
+              "bold": true
+            },
+            {
+              "name": "Wedding & Engagement",
+              "bold": true
+            },
+            {
+              "name": "Engagement Rings",
+              "bold": false
+            },
+            {
+              "name": "Wedding Bands",
+              "bold": false
+            },
+            {
+              "name": "Promies Rings",
+              "bold": false
+            },
+            {
+              "name": "Bridal Sets",
+              "bold": false
+            },
+            {
+              "name": "All Necklaces",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Earrings",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Dangle & Drop Earrings",
+              "bold": true
+            },
+            {
+              "name": "Stud Earrings",
+              "bold": true
+            },
+            {
+              "name": "Hoop Earrings",
+              "bold": true
+            },
+            {
+              "name": "Chandelier Earrings",
+              "bold": true
+            },
+            {
+              "name": "Ear Jackets & Climbers",
+              "bold": true
+            },
+            {
+              "name": "Cluster Earrings",
+              "bold": true
+            },
+            {
+              "name": "Cuff & Wrap Earrings",
+              "bold": true
+            },
+            {
+              "name": "Clip On Earrings",
+              "bold": true
+            },
+            {
+              "name": "All Earrings",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Bracelets",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Beaded Bracelets",
+              "bold": true
+            },
+            {
+              "name": "Bangles",
+              "bold": true
+            },
+            {
+              "name": "Charm Bracelets",
+              "bold": true
+            },
+            {
+              "name": "Woven & Braided Bracelets",
+              "bold": true
+            },
+            {
+              "name": "Cuff Bracelets",
+              "bold": true
+            },
+            {
+              "name": "Chain & Link Bracelets",
+              "bold": true
+            },           
+            {
+              "name": "All Bracelets",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Body Jewelry",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Anklets",
+              "bold": true
+            },
+            {
+              "name": "Hair Jewelry",
+              "bold": true
+            },
+            {
+              "name": "Nose Rings & Studs",
+              "bold": true
+            },
+            {
+              "name": "Arm Bands",
+              "bold": true
+            },
+            {
+              "name": "Nipple Jewelry",
+              "bold": true
+            },
+            {
+              "name": "Belly Rings",
+              "bold": true
+            },
+            {
+              "name": "Shoulder Jewelry",
+              "bold": true
+            },
+            {
+              "name": "Toe Rings",
+              "bold": true
+            },
+            {
+              "name": "Lip Rings",
+              "bold": true
+            },
+            {
+              "name": "All Body Jewelry",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "All Jewelry",
+          "bold": true,
+          "subcategories": []
+        }
+      ]
+    }
+  ]
+}
