@@ -1,10 +1,10 @@
 import React from 'react';
 
 const SubCategory = (props) => {
-  const {category} = props;
-  console.log(category)
+  const {subCategory} = props;
+  console.log(subCategory)
   return (
-    <div>{category.name}</div>
+    <div>{subCategory.name}</div>
   )
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Categories from './Categories.jsx';
+import Category from './Category.jsx';
 
 const Department = (props) => {
   const {department} = props;
@@ -8,8 +8,8 @@ const Department = (props) => {
   return (
     < >
       <h1>{department.name}</h1>
-      {department.categories.map(categories => {
-        return(<Categories categories={categories} />)
+      {department.categories.map(category => {
+        return(<Category category={category} />)
       })}
     </>
   )
