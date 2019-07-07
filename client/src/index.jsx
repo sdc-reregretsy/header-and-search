@@ -8,6 +8,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
+import { InputGroup } from 'react-bootstrap';
 
 class App extends React.Component {
   constructor(props) {
@@ -19,19 +20,31 @@ class App extends React.Component {
 
   render() {
     console.log(navCats)
-    console.log(Navbar)
     return (
       // <div>
       //   <Departments departments={navCats.departments} />
       // </div>
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Regretsy</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
+      <Navbar bg="light" expand="sm" className="align-items-center">
+        <Navbar.Brand href="#home">RegrEtsy</Navbar.Brand>
         <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-success">Search</Button>
+          <InputGroup >
+            <FormControl
+              placeholder="Search for items or shops"
+              aria-label="Search for items or shops"
+              aria-describedby="basic-addon2"
+            />
+            <InputGroup.Append>
+              <Button variant="outline-secondary">Button</Button>
+            </InputGroup.Append>
+          </InputGroup>
         </Form>
+        <Nav className="justify-content-end" style={{width:"50%"}}>
+          <Nav.Link>Sell on Etsy</Nav.Link>
+          <Nav.Link>Register</Nav.Link>
+          <Button variant="outline-success">Sign In</Button>
+
+        </Nav>
+
       </Navbar>
     )
   }
