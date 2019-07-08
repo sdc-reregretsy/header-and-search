@@ -5,7 +5,7 @@ import { DropdownButton } from 'react-bootstrap';
 
 const Category = (props) => {
   const { category } = props;
-  console.log(category)
+  // console.log(category)
   return (
     < >
       {/* <h3>{category.name}</h3>
@@ -15,9 +15,9 @@ const Category = (props) => {
         )
       })} */}
       <DropdownButton drop="right" title={`${category.name}`}>
-        {category.subcategories.map(subCategory => {
+        {category.subcategories.map((subCategory, i) => {
           return (
-            <SubCategory subCategory={subCategory} />
+            <SubCategory subCategory={subCategory} key={`subCategory:${i}`}/>
           )
         })}
       </DropdownButton>

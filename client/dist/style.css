@@ -3,3 +3,7 @@
   font-family: "Graphik Webfont";
   font-size: 30px;
 }
+
+.dropdown-item:hover {
+  background-color: #ff0000;
+}
