@@ -30,9 +30,11 @@ class App extends React.Component {
                 placeholder="Search for items or shops"
                 aria-label="Search for items or shops"
                 aria-describedby="basic-addon2"
-                />
+              />
               <InputGroup.Append>
-                <Button variant="outline-secondary">Button</Button>
+                {/* &#x1F50E; is another magnifying glass option*/}
+                <Button variant="outline-secondary">&#8981;</Button>
+
               </InputGroup.Append>
             </InputGroup>
           </Form>
@@ -46,9 +48,9 @@ class App extends React.Component {
           <Departments departments={navCats.departments} />
         </Navbar>
       </>
-    // <div>
-    //   <Departments departments={navCats.departments} />
-    // </div>
+      // <div>
+      //   <Departments departments={navCats.departments} />
+      // </div>
     )
   }
 }

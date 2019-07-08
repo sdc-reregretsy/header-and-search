@@ -48,7 +48,7 @@ class Department extends React.Component {
           show={this.state.dropdownOpen}
           onToggle={this.toggle}
           >
-          <Dropdown.Toggle >
+          <Dropdown.Toggle className="custom-drop">
             {`${department.name}`}
           </Dropdown.Toggle>
           <Dropdown.Menu>
