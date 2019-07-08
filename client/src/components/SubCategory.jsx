@@ -1,10 +1,11 @@
 import React from 'react';
+import {Dropdown} from 'react-bootstrap';
 
 const SubCategory = (props) => {
   const {subCategory} = props;
   // console.log(subCategory)
   return (
-    <div>{subCategory.name}</div>
+    <Dropdown.Item>{subCategory.name}</Dropdown.Item>
   )
 }
 
