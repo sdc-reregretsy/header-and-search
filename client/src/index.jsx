@@ -33,7 +33,7 @@ class App extends React.Component {
               />
               <InputGroup.Append>
                 {/* &#x1F50E; is another magnifying glass option*/}
-                <Button variant="outline-secondary">&#8981;</Button>
+                <Button variant="outline-secondary" className="searchBtn">&#8981;</Button>
 
               </InputGroup.Append>
             </InputGroup>

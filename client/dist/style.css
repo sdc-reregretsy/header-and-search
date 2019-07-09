@@ -9,7 +9,28 @@
 }
 
 .custom-drop {
-  background-color: white;
+  background-color: #f8f9fa!important;
   color: black;
   border: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+  background-color: #f8f9fa!important;
+  color: black;
+  border-bottom: solid black 2px;
+  border-radius: 0px;
+}
+
+.show .dropdown {
+  background-color: #f8f9fa!important;
+  color: black;
+  border: none;
+}
+
+.form-control {
+  border-radius: 1rem;
+}
+
+.searchBtn {
+  border-radius: 1rem;
 }

@@ -47,6 +47,8 @@ class Department extends React.Component {
           onMouseLeave={this.onMouseLeave}
           show={this.state.dropdownOpen}
           onToggle={this.toggle}
+          focusFirstItemOnShow={true}
+          variant={"warning"}
           >
           <Dropdown.Toggle className="custom-drop">
             {`${department.name}`}
