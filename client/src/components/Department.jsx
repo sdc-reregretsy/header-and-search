@@ -34,7 +34,7 @@ class Department extends React.Component {
 
   render() {
     const { department } = this.props;
-    console.log(department);
+    // console.log(department);
 
     return (
       < >
