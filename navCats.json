@@ -675,6 +675,310 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Wedding & Party",
+      "categories": [
+        {
+          "name": "Party Supplies",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Party Decor",
+              "bold": true
+            },
+            {
+              "name": "Baking & Cake Decoration",
+              "bold": true
+            },
+            {
+              "name": "All Party Supplies",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Invitations & Paper",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Invitations & Announcements",
+              "bold": true
+            },
+            {
+              "name": "Wedding Invitations",
+              "bold": false
+            },
+            {
+              "name": "Wedding Invitation Kits",
+              "bold": false
+            },
+            {
+              "name": "Wedding Templates",
+              "bold": false
+            },
+            {
+              "name": "Save The Dates",
+              "bold": false
+            },
+            {
+              "name": "Stationary",
+              "bold": true
+            },
+            {
+              "name": "Greeting Cards",
+              "bold": true
+            },
+            {
+              "name": "Gift Wrapping",
+              "bold": true
+            },
+            {
+              "name": "All Invitations & Paper",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Wedding Decorations",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Centerpieces",
+              "bold": true
+            },
+            {
+              "name": "Cake Toppers",
+              "bold": true
+            },
+            {
+              "name": "Serving & Dining",
+              "bold": true
+            },
+            {
+              "name": "Cake Servers & Knives",
+              "bold": false
+            },
+            {
+              "name": "Table Decor",
+              "bold": false
+            },           
+            {
+              "name": "Candles & Holders",
+              "bold": true
+            },
+            {
+              "name": "Baskets & Boxes",
+              "bold": true
+            },
+            {
+              "name": "Ring Bearer Pillows",
+              "bold": true
+            },
+            {
+              "name": "Plants",
+              "bold": true
+            },
+            {
+              "name": "All Wedding Decorations",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Wedding Gifts",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Birdesmaids Gifts",
+              "bold": true
+            },
+            {
+              "name": "Wedding Favors",
+              "bold": true
+            },
+            {
+              "name": "Gifts For The Couple",
+              "bold": true
+            },
+            {
+              "name": "Groomsmen Gifts",
+              "bold": true
+            },
+            {
+              "name": "Guest Books",
+              "bold": true
+            },           
+            {
+              "name": "Portraits & Frames",
+              "bold": true
+            },
+            {
+              "name": "Albums & Scrapbooks",
+              "bold": true
+            },
+            {
+              "name": "All Wedding Gifts",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Wedding Accessories",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Something Blue",
+              "bold": true
+            },
+            {
+              "name": "Boquets & Corsages",
+              "bold": true
+            },
+            {
+              "name": "Veils",
+              "bold": true
+            },
+            {
+              "name": "Bags & Purses",
+              "bold": true
+            },
+            {
+              "name": "Cover Ups & Scarves",
+              "bold": true
+            },           
+            {
+              "name": "Hair Accessories",
+              "bold": true
+            },
+            {
+              "name": "Barrettes & Clips",
+              "bold": false
+            },
+            {
+              "name": "Decorative Combs",
+              "bold": false
+            },
+            {
+              "name": "Fascinators & Mini Hats",
+              "bold": false
+            },
+            {
+              "name": "Hair Jewelry",
+              "bold": false
+            },
+            {
+              "name": "Hair Pins",
+              "bold": false
+            },
+            {
+              "name": "Wreaths & Tiaras",
+              "bold": false
+            },
+            {
+              "name": "Cummerbunds",
+              "bold": true
+            },
+            {
+              "name": "Neckties",
+              "bold": true
+            },
+            {
+              "name": "Umbrellas",
+              "bold": true
+            },
+            {
+              "name": "Hats",
+              "bold": true
+            },
+            {
+              "name": "All Wedding Accessories",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Wedding Clothing",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Dresses",
+              "bold": true
+            },
+            {
+              "name": "Bridal Gowns & Seperates",
+              "bold": false
+            },
+            {
+              "name": "Bridesmaid Dresses",
+              "bold": false
+            },
+            {
+              "name": "Flower Girl Dresses",
+              "bold": false
+            },
+            {
+              "name": "Mother of the Bride Dresses",
+              "bold": false
+            },           
+            {
+              "name": "Lingerie & Garters",
+              "bold": true
+            },
+            {
+              "name": "Suits",
+              "bold": true
+            },
+            {
+              "name": "All Wedding Clothing",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Wedding Jewelry",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Earrings",
+              "bold": true
+            },
+            {
+              "name": "Rings",
+              "bold": false
+            },
+            {
+              "name": "Engagement Rings",
+              "bold": false
+            },
+            {
+              "name": "Wedding Bands",
+              "bold": false
+            },
+            {
+              "name": "Bridal Sets",
+              "bold": false
+            },           
+            {
+              "name": "Necklaces",
+              "bold": true
+            },
+            {
+              "name": "Bracelets",
+              "bold": true
+            },
+            {
+              "name": "Jewelry Sets",
+              "bold": true
+            },
+            {
+              "name": "All Wedding Jewelry",
+              "bold": true
+            }
+          ]
+        }
+      ]
     }
+
   ]
 }
