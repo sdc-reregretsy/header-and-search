@@ -9,6 +9,7 @@ import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import { InputGroup } from 'react-bootstrap';
+import { Typeahead } from 'react-bootstrap-typeahead';
 
 class App extends React.Component {
   constructor(props) {
@@ -26,10 +27,17 @@ class App extends React.Component {
           <Navbar.Brand href="#home">RegrEtsy</Navbar.Brand>
           <Form inline>
             <InputGroup >
-              <FormControl
+              {/* <Typeahead
+                labelKey="name"
+                options={["options", "Texxas"]}
+                placeholder="Choose a state..."
+              /> */}
+              <Typeahead
                 placeholder="Search for items or shops"
                 aria-label="Search for items or shops"
                 aria-describedby="basic-addon2"
+                labelKey="name"
+                options={["options", "Texxas"]}
               />
               <InputGroup.Append>
                 {/* &#x1F50E; is another magnifying glass option*/}
