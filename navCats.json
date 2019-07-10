@@ -1119,6 +1119,223 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Craft Supplies",
+      "categories": [
+        {
+          "name": "Home & Hobby",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Woodworking & Carpentry",
+              "bold": true
+            },
+            {
+              "name": "Home Improvement",
+              "bold": true
+            },
+            {
+              "name": "Electronics & Circuitry",
+              "bold": true
+            },
+            {
+              "name": "Framing",
+              "bold": true
+            },
+            {
+              "name": "Doll & Model Making",
+              "bold": true
+            },
+            {
+              "name": "Candle Making",
+              "bold": true
+            },
+            {
+              "name": "Food & Fermenting",
+              "bold": true
+            },
+            {
+              "name": "Floral & Garden Crafts",
+              "bold": true
+            },
+            {
+              "name": "Gardening & Plants",
+              "bold": false
+            },
+            {
+              "name": "Floral Arranging",
+              "bold": false
+            },
+            {
+              "name": "All Home & Hobby",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Jewelry & Beauty",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Jewelry Making & Beading",
+              "bold": true
+            },
+            {
+              "name": "Beads",
+              "bold": false
+            },
+            {
+              "name": "Cabochons",
+              "bold": false
+            },
+            {
+              "name": "Charms",
+              "bold": false
+            },
+            {
+              "name": "Jewelry Findings",
+              "bold": false
+            },
+            {
+              "name": "Pendants",
+              "bold": false
+            },
+            {
+              "name": "Makeup & Face Painting",
+              "bold": true
+            },
+            {
+              "name": "All Jewelry & Beauty",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Sewing & Fiber",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Knitting",
+              "bold": true
+            },
+            {
+              "name": "Crochet",
+              "bold": true
+            },
+            {
+              "name": "Sewing",
+              "bold": true
+            },
+            {
+              "name": "Quilting",
+              "bold": true
+            },
+            {
+              "name": "Embroidery",
+              "bold": true
+            },           
+            {
+              "name": "Cross Stitch",
+              "bold": true
+            },
+            {
+              "name": "All Sewing & Fiber",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Papercraft",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Card Making & Stationery",
+              "bold": true
+            },
+            {
+              "name": "Scrapbooking",
+              "bold": true
+            },
+            {
+              "name": "Bookbinding",
+              "bold": true
+            },
+            {
+              "name": "Stamping",
+              "bold": true
+            },
+            {
+              "name": "Origami",
+              "bold": true
+            },           
+            {
+              "name": "Party & Gifting",
+              "bold": true
+            },
+            {
+              "name": "All Papercraft",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Visual Arts",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Painting",
+              "bold": true
+            },
+            {
+              "name": "Printing & Printmaking",
+              "bold": true
+            },
+            {
+              "name": "Drawing & Drafting",
+              "bold": true
+            },
+            {
+              "name": "Photography",
+              "bold": true
+            },
+            {
+              "name": "Collage",
+              "bold": true
+            },           
+            {
+              "name": "Calligraphy & Pens",
+              "bold": true
+            },
+            {
+              "name": "All Visual Arts",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Sculpting & Forming",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Ceramics & Pottery",
+              "bold": true
+            },
+            {
+              "name": "Metalworking",
+              "bold": true
+            },
+            {
+              "name": "Carving & Whittling",
+              "bold": true
+            },
+            {
+              "name": "All Sculpting & Forming",
+              "bold": true
+            }
+          ]
+        }
+      ]
     }
   ]
 }
