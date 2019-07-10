@@ -6,8 +6,8 @@ const Departments = (props) => {
   console.log(departments);
   return (
     < >
-      {departments.map((department) => {
-        return(<Department department={department}/>)
+      {departments.map((department, i) => {
+        return(<Department department={department} key={`Department${i}`}/>)
       })}
     </>
   )
