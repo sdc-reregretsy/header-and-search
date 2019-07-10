@@ -284,10 +284,6 @@
               "bold": true
             },
             {
-              "name": "Nipple Jewelry",
-              "bold": true
-            },
-            {
               "name": "Belly Rings",
               "bold": true
             },
@@ -635,10 +631,6 @@
               "bold": true
             },
             {
-              "name": "Sex Toys",
-              "bold": true
-            },
-            {
               "name": "All Bath & Beauty",
               "bold": true
             }
@@ -978,7 +970,155 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Toys & Entertainment",
+      "categories": [
+        {
+          "name": "Toys",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Baby & Toddler Toys",
+              "bold": false
+            },
+            {
+              "name": "Dolls & Action Figures",
+              "bold": false
+            },
+            {
+              "name": "Stuffed Animals",
+              "bold": false
+            },
+            {
+              "name": "Games & Puzzles",
+              "bold": false
+            },
+            {
+              "name": "Learning & School",
+              "bold": false
+            },
+            {
+              "name": "Kids' Crafts",
+              "bold": false
+            },
+            {
+              "name": "Slime & Foam",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "name": "Electronics & Accessories",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Cell Phone Accessories",
+              "bold": false
+            },
+            {
+              "name": "Gadgets",
+              "bold": false
+            },
+            {
+              "name": "Video Games",
+              "bold": false
+            },
+            {
+              "name": "Decals & Skins",
+              "bold": false
+            },
+            {
+              "name": "Cameras",
+              "bold": false
+            },
+            {
+              "name": "Computers & Peripherals",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "name": "Books",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Blank Books",
+              "bold": false
+            },
+            {
+              "name": "Calendars & Planners",
+              "bold": false
+            },
+            {
+              "name": "Book Accessories",
+              "bold": false
+            },
+            {
+              "name": "Children's Books",
+              "bold": false
+            },
+            {
+              "name": "Art & Photography Books",
+              "bold": false
+            },           
+            {
+              "name": "Comics & Graphic Novels",
+              "bold": false
+            },
+            {
+              "name": "Craft & Hobby Books",
+              "bold": false
+            },
+            {
+              "name": "Literature & Fiction",
+              "bold": false
+            },
+            {
+              "name": "Poetry",
+              "bold": false
+            },
+            {
+              "name": "Guides & How Tos",
+              "bold": false
+            },
+            {
+              "name": "Zines & Magazines",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "name": "Movies & Music",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Musical Instruments",
+              "bold": false
+            },
+            {
+              "name": "Instrument Straps",
+              "bold": false
+            },
+            {
+              "name": "Recorded Audio",
+              "bold": false
+            },
+            {
+              "name": "Sheet Music",
+              "bold": false
+            },
+            {
+              "name": "All Movies",
+              "bold": false
+            },           
+            {
+              "name": "All Music",
+              "bold": false
+            }
+          ]
+        }
+      ]
     }
-
   ]
 }
