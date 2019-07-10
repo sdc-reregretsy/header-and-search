@@ -284,10 +284,6 @@
               "bold": true
             },
             {
-              "name": "Nipple Jewelry",
-              "bold": true
-            },
-            {
               "name": "Belly Rings",
               "bold": true
             },
@@ -635,10 +631,6 @@
               "bold": true
             },
             {
-              "name": "Sex Toys",
-              "bold": true
-            },
-            {
               "name": "All Bath & Beauty",
               "bold": true
             }
@@ -670,6 +662,675 @@
             },           
             {
               "name": "All Pet Supplies",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wedding & Party",
+      "categories": [
+        {
+          "name": "Party Supplies",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Party Decor",
+              "bold": true
+            },
+            {
+              "name": "Baking & Cake Decoration",
+              "bold": true
+            },
+            {
+              "name": "All Party Supplies",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Invitations & Paper",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Invitations & Announcements",
+              "bold": true
+            },
+            {
+              "name": "Wedding Invitations",
+              "bold": false
+            },
+            {
+              "name": "Wedding Invitation Kits",
+              "bold": false
+            },
+            {
+              "name": "Wedding Templates",
+              "bold": false
+            },
+            {
+              "name": "Save The Dates",
+              "bold": false
+            },
+            {
+              "name": "Stationary",
+              "bold": true
+            },
+            {
+              "name": "Greeting Cards",
+              "bold": true
+            },
+            {
+              "name": "Gift Wrapping",
+              "bold": true
+            },
+            {
+              "name": "All Invitations & Paper",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Wedding Decorations",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Centerpieces",
+              "bold": true
+            },
+            {
+              "name": "Cake Toppers",
+              "bold": true
+            },
+            {
+              "name": "Serving & Dining",
+              "bold": true
+            },
+            {
+              "name": "Cake Servers & Knives",
+              "bold": false
+            },
+            {
+              "name": "Table Decor",
+              "bold": false
+            },           
+            {
+              "name": "Candles & Holders",
+              "bold": true
+            },
+            {
+              "name": "Baskets & Boxes",
+              "bold": true
+            },
+            {
+              "name": "Ring Bearer Pillows",
+              "bold": true
+            },
+            {
+              "name": "Plants",
+              "bold": true
+            },
+            {
+              "name": "All Wedding Decorations",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Wedding Gifts",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Birdesmaids Gifts",
+              "bold": true
+            },
+            {
+              "name": "Wedding Favors",
+              "bold": true
+            },
+            {
+              "name": "Gifts For The Couple",
+              "bold": true
+            },
+            {
+              "name": "Groomsmen Gifts",
+              "bold": true
+            },
+            {
+              "name": "Guest Books",
+              "bold": true
+            },           
+            {
+              "name": "Portraits & Frames",
+              "bold": true
+            },
+            {
+              "name": "Albums & Scrapbooks",
+              "bold": true
+            },
+            {
+              "name": "All Wedding Gifts",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Wedding Accessories",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Something Blue",
+              "bold": true
+            },
+            {
+              "name": "Boquets & Corsages",
+              "bold": true
+            },
+            {
+              "name": "Veils",
+              "bold": true
+            },
+            {
+              "name": "Bags & Purses",
+              "bold": true
+            },
+            {
+              "name": "Cover Ups & Scarves",
+              "bold": true
+            },           
+            {
+              "name": "Hair Accessories",
+              "bold": true
+            },
+            {
+              "name": "Barrettes & Clips",
+              "bold": false
+            },
+            {
+              "name": "Decorative Combs",
+              "bold": false
+            },
+            {
+              "name": "Fascinators & Mini Hats",
+              "bold": false
+            },
+            {
+              "name": "Hair Jewelry",
+              "bold": false
+            },
+            {
+              "name": "Hair Pins",
+              "bold": false
+            },
+            {
+              "name": "Wreaths & Tiaras",
+              "bold": false
+            },
+            {
+              "name": "Cummerbunds",
+              "bold": true
+            },
+            {
+              "name": "Neckties",
+              "bold": true
+            },
+            {
+              "name": "Umbrellas",
+              "bold": true
+            },
+            {
+              "name": "Hats",
+              "bold": true
+            },
+            {
+              "name": "All Wedding Accessories",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Wedding Clothing",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Dresses",
+              "bold": true
+            },
+            {
+              "name": "Bridal Gowns & Seperates",
+              "bold": false
+            },
+            {
+              "name": "Bridesmaid Dresses",
+              "bold": false
+            },
+            {
+              "name": "Flower Girl Dresses",
+              "bold": false
+            },
+            {
+              "name": "Mother of the Bride Dresses",
+              "bold": false
+            },           
+            {
+              "name": "Lingerie & Garters",
+              "bold": true
+            },
+            {
+              "name": "Suits",
+              "bold": true
+            },
+            {
+              "name": "All Wedding Clothing",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Wedding Jewelry",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Earrings",
+              "bold": true
+            },
+            {
+              "name": "Rings",
+              "bold": false
+            },
+            {
+              "name": "Engagement Rings",
+              "bold": false
+            },
+            {
+              "name": "Wedding Bands",
+              "bold": false
+            },
+            {
+              "name": "Bridal Sets",
+              "bold": false
+            },           
+            {
+              "name": "Necklaces",
+              "bold": true
+            },
+            {
+              "name": "Bracelets",
+              "bold": true
+            },
+            {
+              "name": "Jewelry Sets",
+              "bold": true
+            },
+            {
+              "name": "All Wedding Jewelry",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Toys & Entertainment",
+      "categories": [
+        {
+          "name": "Toys",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Baby & Toddler Toys",
+              "bold": false
+            },
+            {
+              "name": "Dolls & Action Figures",
+              "bold": false
+            },
+            {
+              "name": "Stuffed Animals",
+              "bold": false
+            },
+            {
+              "name": "Games & Puzzles",
+              "bold": false
+            },
+            {
+              "name": "Learning & School",
+              "bold": false
+            },
+            {
+              "name": "Kids' Crafts",
+              "bold": false
+            },
+            {
+              "name": "Slime & Foam",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "name": "Electronics & Accessories",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Cell Phone Accessories",
+              "bold": false
+            },
+            {
+              "name": "Gadgets",
+              "bold": false
+            },
+            {
+              "name": "Video Games",
+              "bold": false
+            },
+            {
+              "name": "Decals & Skins",
+              "bold": false
+            },
+            {
+              "name": "Cameras",
+              "bold": false
+            },
+            {
+              "name": "Computers & Peripherals",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "name": "Books",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Blank Books",
+              "bold": false
+            },
+            {
+              "name": "Calendars & Planners",
+              "bold": false
+            },
+            {
+              "name": "Book Accessories",
+              "bold": false
+            },
+            {
+              "name": "Children's Books",
+              "bold": false
+            },
+            {
+              "name": "Art & Photography Books",
+              "bold": false
+            },           
+            {
+              "name": "Comics & Graphic Novels",
+              "bold": false
+            },
+            {
+              "name": "Craft & Hobby Books",
+              "bold": false
+            },
+            {
+              "name": "Literature & Fiction",
+              "bold": false
+            },
+            {
+              "name": "Poetry",
+              "bold": false
+            },
+            {
+              "name": "Guides & How Tos",
+              "bold": false
+            },
+            {
+              "name": "Zines & Magazines",
+              "bold": false
+            }
+          ]
+        },
+        {
+          "name": "Movies & Music",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Musical Instruments",
+              "bold": false
+            },
+            {
+              "name": "Instrument Straps",
+              "bold": false
+            },
+            {
+              "name": "Recorded Audio",
+              "bold": false
+            },
+            {
+              "name": "Sheet Music",
+              "bold": false
+            },
+            {
+              "name": "All Movies",
+              "bold": false
+            },           
+            {
+              "name": "All Music",
+              "bold": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Craft Supplies",
+      "categories": [
+        {
+          "name": "Home & Hobby",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Woodworking & Carpentry",
+              "bold": true
+            },
+            {
+              "name": "Home Improvement",
+              "bold": true
+            },
+            {
+              "name": "Electronics & Circuitry",
+              "bold": true
+            },
+            {
+              "name": "Framing",
+              "bold": true
+            },
+            {
+              "name": "Doll & Model Making",
+              "bold": true
+            },
+            {
+              "name": "Candle Making",
+              "bold": true
+            },
+            {
+              "name": "Food & Fermenting",
+              "bold": true
+            },
+            {
+              "name": "Floral & Garden Crafts",
+              "bold": true
+            },
+            {
+              "name": "Gardening & Plants",
+              "bold": false
+            },
+            {
+              "name": "Floral Arranging",
+              "bold": false
+            },
+            {
+              "name": "All Home & Hobby",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Jewelry & Beauty",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Jewelry Making & Beading",
+              "bold": true
+            },
+            {
+              "name": "Beads",
+              "bold": false
+            },
+            {
+              "name": "Cabochons",
+              "bold": false
+            },
+            {
+              "name": "Charms",
+              "bold": false
+            },
+            {
+              "name": "Jewelry Findings",
+              "bold": false
+            },
+            {
+              "name": "Pendants",
+              "bold": false
+            },
+            {
+              "name": "Makeup & Face Painting",
+              "bold": true
+            },
+            {
+              "name": "All Jewelry & Beauty",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Sewing & Fiber",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Knitting",
+              "bold": true
+            },
+            {
+              "name": "Crochet",
+              "bold": true
+            },
+            {
+              "name": "Sewing",
+              "bold": true
+            },
+            {
+              "name": "Quilting",
+              "bold": true
+            },
+            {
+              "name": "Embroidery",
+              "bold": true
+            },           
+            {
+              "name": "Cross Stitch",
+              "bold": true
+            },
+            {
+              "name": "All Sewing & Fiber",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Papercraft",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Card Making & Stationery",
+              "bold": true
+            },
+            {
+              "name": "Scrapbooking",
+              "bold": true
+            },
+            {
+              "name": "Bookbinding",
+              "bold": true
+            },
+            {
+              "name": "Stamping",
+              "bold": true
+            },
+            {
+              "name": "Origami",
+              "bold": true
+            },           
+            {
+              "name": "Party & Gifting",
+              "bold": true
+            },
+            {
+              "name": "All Papercraft",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Visual Arts",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Painting",
+              "bold": true
+            },
+            {
+              "name": "Printing & Printmaking",
+              "bold": true
+            },
+            {
+              "name": "Drawing & Drafting",
+              "bold": true
+            },
+            {
+              "name": "Photography",
+              "bold": true
+            },
+            {
+              "name": "Collage",
+              "bold": true
+            },           
+            {
+              "name": "Calligraphy & Pens",
+              "bold": true
+            },
+            {
+              "name": "All Visual Arts",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "name": "Sculpting & Forming",
+          "bold": false,
+          "subcategories": [
+            {
+              "name": "Ceramics & Pottery",
+              "bold": true
+            },
+            {
+              "name": "Metalworking",
+              "bold": true
+            },
+            {
+              "name": "Carving & Whittling",
+              "bold": true
+            },
+            {
+              "name": "All Sculpting & Forming",
               "bold": true
             }
           ]

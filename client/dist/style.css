@@ -1,0 +1,36 @@
+.navbar-light .navbar-brand {
+  color: #f45800;
+  font-family: "Graphik Webfont";
+  font-size: 30px;
+}
+
+.dropdown-item:hover {
+  background-color: #ff0000;
+}
+
+.custom-drop {
+  background-color: #f8f9fa!important;
+  color: black;
+  border: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+  background-color: #f8f9fa!important;
+  color: black;
+  border-bottom: solid black 2px;
+  border-radius: 0px;
+}
+
+.show .dropdown {
+  background-color: #f8f9fa!important;
+  color: black;
+  border: none;
+}
+
+.form-control {
+  border-radius: 1rem;
+}
+
+.searchBtn {
+  border-radius: 1rem;
+}
