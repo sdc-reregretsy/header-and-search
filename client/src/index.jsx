@@ -10,13 +10,39 @@ import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import { InputGroup } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
+import axios from 'axios';
 
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      searchTerm: ''
+      searchTerm: '',
+      allTitles: [],
+      idDict: {}
     }
+  }
+
+  handleItems(items) {
+    const titleArr = [];
+    const titleDict = {};
+    for(let element of items) {
+      titleDict[element.title] = element.listing_id;
+      titleArr.push(element.title);
+    }
+    // console.log(titleArr);
+    // console.log(titleDict);
+    this.setState({allTitles: titleArr, idDict: titleDict});
+  }
+
+  componentDidMount() {
+    axios.get('http://localhost:3000/search')
+      .then((result) => {
+        console.log(result.data);
+        this.handleItems(result.data);
+      })
+      .catch((err) => {
+        console.log('Error loading items on mount')
+      })
   }
 
   render() {
@@ -37,7 +63,7 @@ class App extends React.Component {
                 aria-label="Search for items or shops"
                 aria-describedby="basic-addon2"
                 labelKey="name"
-                options={["options", "Texxas"]}
+                options={this.state.allTitles}
               />
               <InputGroup.Append>
                 {/* &#x1F50E; is another magnifying glass option*/}
