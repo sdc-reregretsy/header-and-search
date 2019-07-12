@@ -20,18 +20,30 @@ class App extends React.Component {
       allTitles: [],
       idDict: {}
     }
+    this.handleSearchChange = this.handleSearchChange.bind(this)
+  }
+
+  handleSearchChange(selected) {
+    console.log(selected[0]);
+    console.log('Change Handler entered')
+    this.setState({searchTerm: selected[0]})
+  }
+
+  handleSearchSubmit() {
+    console.log('You pressed the button but nothing happened')
+
   }
 
   handleItems(items) {
     const titleArr = [];
     const titleDict = {};
-    for(let element of items) {
+    for (let element of items) {
       titleDict[element.title] = element.listing_id;
       titleArr.push(element.title);
     }
     // console.log(titleArr);
     // console.log(titleDict);
-    this.setState({allTitles: titleArr, idDict: titleDict});
+    this.setState({ allTitles: titleArr, idDict: titleDict });
   }
 
   componentDidMount() {
@@ -64,10 +76,16 @@ class App extends React.Component {
                 aria-describedby="basic-addon2"
                 labelKey="name"
                 options={this.state.allTitles}
+                onChange={(selected) => { this.handleSearchChange(selected) }}
               />
               <InputGroup.Append>
                 {/* &#x1F50E; is another magnifying glass option*/}
-                <Button variant="outline-secondary" className="searchBtn">&#8981;</Button>
+                <Button variant="outline-secondary"
+                  className="searchBtn"
+                  onClick={()=>{this.handleSearchSubmit()}}
+                  >
+                  &#8981;
+                  </Button>
 
               </InputGroup.Append>
             </InputGroup>
