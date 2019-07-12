@@ -20,24 +20,38 @@ class App extends React.Component {
       allTitles: [],
       idDict: {}
     }
+    this.handleSearchChange = this.handleSearchChange.bind(this)
+  }
+
+  // NOTE: Typeahead change handler works differently than a normal input field
+  handleSearchChange(selected) {
+    console.log(selected[0]);
+    console.log('Change Handler entered')
+    this.setState({searchTerm: selected[0]})
+  }
+
+  handleSearchSubmit() {
+    console.log('You pressed the button but nothing happened')
+    console.log(`Search Term: ${this.state.searchTerm} \nReferences id: ${this.state.idDict[this.state.searchTerm]}`)
+
   }
 
   handleItems(items) {
     const titleArr = [];
     const titleDict = {};
-    for(let element of items) {
+    for (let element of items) {
       titleDict[element.title] = element.listing_id;
       titleArr.push(element.title);
     }
     // console.log(titleArr);
     // console.log(titleDict);
-    this.setState({allTitles: titleArr, idDict: titleDict});
+    this.setState({ allTitles: titleArr, idDict: titleDict });
   }
 
   componentDidMount() {
     axios.get('http://localhost:3000/search')
       .then((result) => {
-        console.log(result.data);
+        // console.log(result.data);
         this.handleItems(result.data);
       })
       .catch((err) => {
@@ -46,7 +60,7 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(navCats)
+    // console.log(navCats)
     return (
       <>
         <Navbar bg="light" expand="sm" className="align-items-center">
@@ -64,10 +78,17 @@ class App extends React.Component {
                 aria-describedby="basic-addon2"
                 labelKey="name"
                 options={this.state.allTitles}
+                onChange={(selected) => { this.handleSearchChange(selected) }}
+                id="typeahead-search"
               />
               <InputGroup.Append>
                 {/* &#x1F50E; is another magnifying glass option*/}
-                <Button variant="outline-secondary" className="searchBtn">&#8981;</Button>
+                <Button variant="outline-secondary"
+                  className="searchBtn"
+                  onClick={()=>{this.handleSearchSubmit()}}
+                  >
+                  &#8981;
+                  </Button>
 
               </InputGroup.Append>
             </InputGroup>
