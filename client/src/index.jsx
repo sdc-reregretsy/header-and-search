@@ -61,7 +61,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3000/search')
+    axios.get('/search')
       .then((result) => {
         // console.log(result.data);
         this.handleItems(result.data);

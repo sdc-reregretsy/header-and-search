@@ -13,7 +13,7 @@ app.use('/', express.static('./client/dist'));
 app.get('/search', (req, res) => {
   db.getAllItems((err, result) => {
     if (err) {
-      res.status(404).end();
+      res.status(404).send('Error, no records found');
     } else {
       // console.log(result);
       res.send(result);
