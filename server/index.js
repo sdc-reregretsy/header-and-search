@@ -2,8 +2,10 @@ const express = require('express');
 const db = require('../database');
 const bodyParser = require('body-parser');
 const app = express();
+const cors = require('cors');
 
-app.use(bodyParser.json())
+app.use(bodyParser.json());
+app.use(cors());
 
 app.use('/', express.static('./client/dist'));
 
