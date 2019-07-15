@@ -12,7 +12,7 @@ app.get('/search', (req, res) => {
     if(err){
       res.status(404).end();
     }else {
-      console.log(result);
+      // console.log(result);
       res.send(result);
     }
   })

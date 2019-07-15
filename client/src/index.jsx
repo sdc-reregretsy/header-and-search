@@ -21,7 +21,13 @@ class App extends React.Component {
       idDict: {}
     }
     this.handleSearchChange = this.handleSearchChange.bind(this)
+    const test = 'testing';
+    
+    this.bc = new BroadcastChannel('regretfully');
+
+    
   }
+
 
   // NOTE: Typeahead change handler works differently than a normal input field
   handleSearchChange(selected) {
@@ -30,9 +36,12 @@ class App extends React.Component {
     this.setState({searchTerm: selected[0]})
   }
 
+  //On submit need to lookup the listing_id of the selected term and pass it to other microservices
   handleSearchSubmit() {
     console.log('You pressed the button but nothing happened')
-    console.log(`Search Term: ${this.state.searchTerm} \nReferences id: ${this.state.idDict[this.state.searchTerm]}`)
+    let listing_id = this.state.idDict[this.state.searchTerm]
+    console.log(`Search Term: ${this.state.searchTerm} \nReferences id: ${listing_id}`)
+    this.bc.postMessage(listing_id);
 
   }
 
@@ -61,6 +70,12 @@ class App extends React.Component {
 
   render() {
     // console.log(navCats)
+    // console.log(this.bc)
+
+    this.bc.onmessage = function(ev) {
+      console.log(ev.data)
+    }
+    
     return (
       <>
         <Navbar bg="light" expand="sm" className="align-items-center">
@@ -110,4 +125,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('header'));
+ReactDOM.render(<App />, document.getElementById('navpane'));
