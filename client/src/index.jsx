@@ -38,8 +38,11 @@ class App extends React.Component {
 
   //On submit need to lookup the listing_id of the selected term and pass it to other microservices
   handleSearchSubmit() {
-    console.log('You pressed the button but nothing happened')
     let listing_id = this.state.idDict[this.state.searchTerm]
+    if(listing_id === undefined) {
+      return alert('Please pick an option from the search bar')
+    }
+    console.log('You pressed the button but nothing happened')
     console.log(`Search Term: ${this.state.searchTerm} \nReferences id: ${listing_id}`)
     this.bc.postMessage(listing_id);
 
