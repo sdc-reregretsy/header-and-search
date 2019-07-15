@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "listing_id": "81814051",
     "title": "Gold or Silver Butterfly Necklace"
