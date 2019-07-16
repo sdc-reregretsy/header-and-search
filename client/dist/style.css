@@ -1,17 +1,22 @@
 .navbar-light .navbar-brand {
   color: #f45800;
-  font-family: "Graphik Webfont";
+  font-family: "roboto";
   font-size: 30px;
 }
 
 .dropdown-item:hover {
-  background-color: #ff0000;
+  /* background-color: #ff0000; */
+  border-bottom: solid black 2px;
+  border-radius: 0px;
+
+
 }
 
 .custom-drop {
   background-color: #f8f9fa!important;
   color: black;
   border: none;
+  font-family: "roboto";
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
@@ -19,6 +24,7 @@
   color: black;
   border-bottom: solid black 2px;
   border-radius: 0px;
+  font-family: "roboto";
 }
 
 .show .dropdown {
@@ -33,4 +39,33 @@
 
 .searchBtn {
   border-radius: 1rem;
+}
+
+.dropdown-item {
+  font-family: "roboto"
+}
+
+.form-inline {
+  width: 60%
+}
+
+/* .form-inline .custom-select, .form-inline .input-group { */
+#navbarSearch {
+  width: 95%
+}
+
+.input-group > .rbt:not(:last-child) .form-control {
+  width: 100%;
+  font-family: "roboto"
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: "roboto";
+  color: black
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  /* color: black; */
+  border-bottom: solid black 2px;
+  border-radius: 0px;
 }
