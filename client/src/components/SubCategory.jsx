@@ -1,11 +1,15 @@
 import React from 'react';
-import {Dropdown} from 'react-bootstrap';
+import { Dropdown } from 'react-bootstrap';
 
 const SubCategory = (props) => {
-  const {subCategory} = props;
-  // console.log(subCategory)
+  const { subCategory } = props;
+  console.log(subCategory)
   return (
-    <Dropdown.Item>{subCategory.name}</Dropdown.Item>
+    <>
+      {subCategory.bold === true ?
+        <Dropdown.Item style={{ "font-weight": "bold" }}>{subCategory.name}</Dropdown.Item> :
+        <Dropdown.Item>{subCategory.name}</Dropdown.Item>}
+    </>
   )
 }
 
