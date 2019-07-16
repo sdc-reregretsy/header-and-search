@@ -2,15 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import navCats from '../../navCats.json'
 import Departments from './components/Departments.jsx'
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button';
-import { InputGroup } from 'react-bootstrap';
+import { Navbar, Nav, Form, Button, InputGroup } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import axios from 'axios';
+import config from '../../config.js'
 
 class App extends React.Component {
   constructor(props) {
@@ -20,12 +15,8 @@ class App extends React.Component {
       allTitles: [],
       idDict: {}
     }
-    this.handleSearchChange = this.handleSearchChange.bind(this)
-    const test = 'testing';
-    
+    this.handleSearchChange = this.handleSearchChange.bind(this)    
     this.bc = new BroadcastChannel('regretfully');
-
-    
   }
 
 
@@ -61,7 +52,8 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('/search')
+    console.log('Searching for db items at:', config.URL)
+    axios.get(`${config.URL}/search`)
       .then((result) => {
         // console.log(result.data);
         this.handleItems(result.data);
@@ -85,11 +77,6 @@ class App extends React.Component {
           <Navbar.Brand href="#home">RegrEtsy</Navbar.Brand>
           <Form inline>
             <InputGroup >
-              {/* <Typeahead
-                labelKey="name"
-                options={["options", "Texxas"]}
-                placeholder="Choose a state..."
-              /> */}
               <Typeahead
                 placeholder="Search for items or shops"
                 aria-label="Search for items or shops"
@@ -121,9 +108,6 @@ class App extends React.Component {
           <Departments departments={navCats.departments} />
         </Navbar>
       </>
-      // <div>
-      //   <Departments departments={navCats.departments} />
-      // </div>
     )
   }
 }
