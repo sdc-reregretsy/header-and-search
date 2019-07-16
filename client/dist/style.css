@@ -55,5 +55,17 @@
 }
 
 .input-group > .rbt:not(:last-child) .form-control {
-  width: 100%
+  width: 100%;
+  font-family: "roboto"
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: "roboto";
+  color: black
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  /* color: black; */
+  border-bottom: solid black 2px;
+  border-radius: 0px;
 }
