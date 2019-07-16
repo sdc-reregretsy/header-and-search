@@ -1,7 +1,7 @@
 const mysql = require('mysql');
-const mysqlConfig = require('./config.js');
+const mysqlConfig = require('../config.js');
 
-var connection = mysql.createConnection(mysqlConfig);
+var connection = mysql.createConnection(mysqlConfig.DBCONFIG);
 
 // connection.query(`CREATE TABLE items (listing_id int NOT NULL, title varchar(255) NOT NULL, PRIMARY KEY (listing_id));`);
 

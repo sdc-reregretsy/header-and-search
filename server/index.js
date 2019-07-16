@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const cors = require('cors');
 const data = require('../sampleData.js')
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -36,4 +37,4 @@ app.get('/search', (req, res) => {
 
 // **************
 
-app.listen(3000, () => { console.log('Header and Search Server listening on port 3000') });
+app.listen(PORT, () => { console.log('Header and Search Server listening on port ', PORT) });
