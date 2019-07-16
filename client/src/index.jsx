@@ -76,7 +76,7 @@ class App extends React.Component {
         <Navbar bg="light" expand="sm" className="align-items-center">
           <Navbar.Brand href="#home">RegrEtsy</Navbar.Brand>
           <Form inline>
-            <InputGroup >
+            <InputGroup id="navbarSearch">
               <Typeahead
                 placeholder="Search for items or shops"
                 aria-label="Search for items or shops"
