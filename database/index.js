@@ -42,15 +42,23 @@ const getAllItems = (cb) => {
 }
 
 const addEntry = (item, cb) => {
-  connection.query(`INSERT INTO items (listing_id, title) values (${item.listing_id}, "${item.title}");`, (err, result) => {
-    if (err) {
-      console.log('Error inserting item:', err);
-      // cb(err)
-    } else {
-      console.log(item)
-      // cb(null, result)
-    }
-  });
+  knex('items').insert(item)
+    .then(result => {
+      console.log(item, "Successfully inserted")
+    })
+    .catch(err => {
+      console.log('Error inserting item:', item, err)
+    })
+  
+  // connection.query(`INSERT INTO items (listing_id, title) values (${item.listing_id}, "${item.title}");`, (err, result) => {
+  //   if (err) {
+  //     console.log('Error inserting item:', err);
+  //     // cb(err)
+  //   } else {
+  //     console.log(item)
+  //     // cb(null, result)
+  //   }
+  // });
 }
 
 
