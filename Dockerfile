@@ -18,3 +18,6 @@ EXPOSE 3000
 
 # start app
 CMD ["npm", "run", "start"]
+
+# Build with: docker build -t bpdavitt/headerandsearch .
+# Push with: docker push bpdavitt/headerandsearch

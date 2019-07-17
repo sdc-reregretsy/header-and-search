@@ -24,17 +24,17 @@ app.get('/search', (req, res) => {
 
 // Uncomment to seed database with listing_id and titles; *********
 
-const allPosts = data.map(item => {
-  return db.addEntry(item)
-})
-console.log('Attempting to seed DB')
-Promise.all(allPosts)
-  .then((success) => {
-    console.log('All Items added')
-  })
-  .catch((fail) => {
-    Console.log('Failure in a promise')
-  })
+// const allPosts = data.map(item => {
+//   return db.addEntry(item)
+// })
+// console.log('Attempting to seed DB')
+// Promise.all(allPosts)
+//   .then((success) => {
+//     console.log('All Items added')
+//   })
+//   .catch((fail) => {
+//     Console.log('Failure in a promise')
+//   })
 
 // **************
 
