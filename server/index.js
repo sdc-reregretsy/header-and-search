@@ -27,6 +27,7 @@ app.get('/search', (req, res) => {
 // const allPosts = data.map(item => {
 //   return db.addEntry(item)
 // })
+// console.log('Attempting to seed DB')
 // Promise.all(allPosts)
 //   .then((success) => {
 //     console.log('All Items added')
