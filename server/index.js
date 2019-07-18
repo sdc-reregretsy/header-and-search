@@ -5,9 +5,11 @@ const app = express();
 const cors = require('cors');
 const data = require('../sampleData.js')
 const PORT = process.env.PORT || 3000;
+const compression = require('compression');
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use(compression());
 
 app.use('/', express.static('./client/dist'));
 

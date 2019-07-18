@@ -73,7 +73,7 @@ class App extends React.Component {
 
     return (
       <>
-        <Navbar bg="light" expand="sm" className="align-items-center">
+        <Navbar expand="sm" className="align-items-center">
           <Navbar.Brand href="#home" id="logo">RegrEtsy</Navbar.Brand>
           <Form inline>
             <InputGroup id="navbarSearch" className="regretsy-search">
@@ -105,9 +105,10 @@ class App extends React.Component {
             <Button variant="outline-success" onClick={() => { alert('Sorry, Sign-In is down') }}>Sign In</Button>
           </Nav>
         </Navbar>
-        <Navbar bg="light" expand="lg">
+        <Navbar expand="lg">
           <Departments departments={navCats.departments} />
         </Navbar>
+        <hr></hr>
       </>
     )
   }
