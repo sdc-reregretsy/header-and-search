@@ -15,7 +15,8 @@ class App extends React.Component {
       allTitles: [],
       idDict: {}
     }
-    this.handleSearchChange = this.handleSearchChange.bind(this)
+    this.handleSearchChange = this.handleSearchChange.bind(this);
+    this.handleSearchReturn = this.handleSearchReturn.bind(this);
     this.bc = new BroadcastChannel('regretfully');
   }
 
@@ -48,6 +49,13 @@ class App extends React.Component {
     this.bc.postMessage(listing_id);
     this.typeahead.getInstance().clear()
     this.setState({ searchTerm: '' });
+  }
+
+  handleSearchReturn(e) {
+    // console.log(e.key);
+    if (e.key === 'Enter') {
+      this.handleSearchSubmit();
+    }
   }
 
   handleItems(items) {
@@ -86,6 +94,8 @@ class App extends React.Component {
                 onChange={(selected) => { this.handleSearchChange(selected) }}
                 id="typeahead-search"
                 ref={(typeahead) => this.typeahead = typeahead}
+                onKeyDown={(event) => {this.handleSearchReturn(event)}}
+                selectHintOnEnter={true}
               />
               <InputGroup.Append>
                 {/* &#x1F50E; is another magnifying glass option*/}
