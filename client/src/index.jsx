@@ -5,7 +5,7 @@ import Departments from './components/Departments.jsx'
 import { Navbar, Nav, Form, Button, InputGroup } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import axios from 'axios';
-import config from '../../config.js'
+import config from '../../config.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -24,7 +24,6 @@ class App extends React.Component {
     console.log('Searching for db items at:', config.URL)
     axios.get(`${config.URL}/search`)
       .then((result) => {
-        // console.log(result.data);
         this.handleItems(result.data);
       })
       .catch((err) => {
@@ -52,7 +51,6 @@ class App extends React.Component {
   }
 
   handleSearchReturn(e) {
-    // console.log(e.key);
     if (e.key === 'Enter') {
       this.handleSearchSubmit();
     }
@@ -65,15 +63,11 @@ class App extends React.Component {
       titleDict[element.title] = element.listing_id;
       titleArr.push(element.title);
     }
-    // console.log(titleArr);
-    // console.log(titleDict);
     this.setState({ allTitles: titleArr, idDict: titleDict });
   }
 
 
   render() {
-    // console.log(navCats)
-    // console.log(this.bc)
 
     this.bc.onmessage = function (ev) {
       console.log(ev.data)

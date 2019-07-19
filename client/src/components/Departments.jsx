@@ -3,7 +3,6 @@ import Department from './Department.jsx';
 
 const Departments = (props) => {
   const {departments} = props;
-  // console.log(departments);
   return (
     < >
       {departments.map((department, i) => {

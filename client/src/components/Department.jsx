@@ -1,7 +1,5 @@
 import React from 'react';
 import Category from './Category.jsx';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Dropdown} from 'react-bootstrap';
 
 class Department extends React.Component {
@@ -34,14 +32,9 @@ class Department extends React.Component {
 
   render() {
     const { department } = this.props;
-    // console.log(department);
-
+    
     return (
       < >
-        {/* <h1>{department.name}</h1>
-      {department.categories.map(category => {
-        return(<Category category={category} />)
-      })} */}
         <Dropdown
           onMouseOver={this.onMouseEnter}
           onMouseLeave={this.onMouseLeave}
