@@ -5,7 +5,7 @@ import Departments from './components/Departments.jsx'
 import { Navbar, Nav, Form, Button, InputGroup } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import axios from 'axios';
-import config from '../../config.js'
+import config from '../../config.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -15,7 +15,8 @@ class App extends React.Component {
       allTitles: [],
       idDict: {}
     }
-    this.handleSearchChange = this.handleSearchChange.bind(this)
+    this.handleSearchChange = this.handleSearchChange.bind(this);
+    this.handleSearchReturn = this.handleSearchReturn.bind(this);
     this.bc = new BroadcastChannel('regretfully');
   }
 
@@ -23,7 +24,6 @@ class App extends React.Component {
     console.log('Searching for db items at:', config.URL)
     axios.get(`${config.URL}/search`)
       .then((result) => {
-        // console.log(result.data);
         this.handleItems(result.data);
       })
       .catch((err) => {
@@ -50,6 +50,12 @@ class App extends React.Component {
     this.setState({ searchTerm: '' });
   }
 
+  handleSearchReturn(e) {
+    if (e.key === 'Enter') {
+      this.handleSearchSubmit();
+    }
+  }
+
   handleItems(items) {
     const titleArr = [];
     const titleDict = {};
@@ -57,15 +63,11 @@ class App extends React.Component {
       titleDict[element.title] = element.listing_id;
       titleArr.push(element.title);
     }
-    // console.log(titleArr);
-    // console.log(titleDict);
     this.setState({ allTitles: titleArr, idDict: titleDict });
   }
 
 
   render() {
-    // console.log(navCats)
-    // console.log(this.bc)
 
     this.bc.onmessage = function (ev) {
       console.log(ev.data)
@@ -86,6 +88,8 @@ class App extends React.Component {
                 onChange={(selected) => { this.handleSearchChange(selected) }}
                 id="typeahead-search"
                 ref={(typeahead) => this.typeahead = typeahead}
+                onKeyDown={(event) => {this.handleSearchReturn(event)}}
+                selectHintOnEnter={true}
               />
               <InputGroup.Append>
                 {/* &#x1F50E; is another magnifying glass option*/}

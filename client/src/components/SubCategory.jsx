@@ -3,7 +3,6 @@ import { Dropdown } from 'react-bootstrap';
 
 const SubCategory = (props) => {
   const { subCategory } = props;
-  // console.log(subCategory)
   return (
     <>
       {subCategory.bold === true ?
