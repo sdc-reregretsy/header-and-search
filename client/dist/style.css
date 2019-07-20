@@ -8,8 +8,6 @@
   background-color: #adadad;
   border-bottom: solid black 2px;
   border-radius: 0px;
-
-
 }
 
 .custom-drop {
@@ -88,4 +86,9 @@
 
 .cart-container {
   max-width: 150px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
 }
