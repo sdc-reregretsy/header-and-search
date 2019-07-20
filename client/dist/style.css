@@ -77,3 +77,9 @@
 .dropdown-menu {
   background-color: #fff;
 }
+
+#cart {
+  height: 10%;
+  width: 10%;
+  padding: 2px;
+}

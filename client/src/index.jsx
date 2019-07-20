@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import navCats from '../../navCats.json'
 import Departments from './components/Departments.jsx'
-import { Navbar, Nav, Form, Button, InputGroup } from 'react-bootstrap';
+import { Navbar, Nav, Form, Button, InputGroup, Image } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import axios from 'axios';
 import config from '../../config.js';
@@ -88,7 +88,7 @@ class App extends React.Component {
                 onChange={(selected) => { this.handleSearchChange(selected) }}
                 id="typeahead-search"
                 ref={(typeahead) => this.typeahead = typeahead}
-                onKeyDown={(event) => {this.handleSearchReturn(event)}}
+                onKeyDown={(event) => { this.handleSearchReturn(event) }}
                 selectHintOnEnter={true}
               />
               <InputGroup.Append>
@@ -107,6 +107,7 @@ class App extends React.Component {
             <Nav.Link className="navLink" onClick={() => { alert('Under Construction: Come Back Later') }}>Sell on RegrEtsy</Nav.Link>
             <Nav.Link className="navLink" onClick={() => { alert('Sorry, Registration is Down') }}>Register</Nav.Link>
             <Button variant="outline-success" onClick={() => { alert('Sorry, Sign-In is down') }}>Sign In</Button>
+            <Image src="https://image.flaticon.com/icons/png/512/34/34627.png" id="cart"></Image>
           </Nav>
         </Navbar>
         <Navbar expand="lg">
