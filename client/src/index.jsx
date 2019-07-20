@@ -107,7 +107,7 @@ class App extends React.Component {
             <Nav.Link className="navLink" onClick={() => { alert('Under Construction: Come Back Later') }}>Sell on RegrEtsy</Nav.Link>
             <Nav.Link className="navLink" onClick={() => { alert('Sorry, Registration is Down') }}>Register</Nav.Link>
             <Button variant="outline-success" onClick={() => { alert('Sorry, Sign-In is down') }}>Sign In</Button>
-            <Image src="https://image.flaticon.com/icons/png/512/34/34627.png" id="cart"></Image>
+            <Image src="https://image.flaticon.com/icons/png/512/34/34627.png" id="cart" fluid></Image>
           </Nav>
         </Navbar>
         <Navbar expand="lg">
