@@ -69,7 +69,7 @@ class App extends React.Component {
   }
 
   addToCart() {
-    this.setState({cartItems: this.state.cartItems + 1})
+    this.setState({ cartItems: this.state.cartItems + 1 })
   }
 
 
@@ -118,8 +118,9 @@ class App extends React.Component {
             <Nav.Link className="navLink" onClick={() => { alert('Sorry, Registration is Down') }}>Register</Nav.Link>
             <Button variant="outline-success" onClick={() => { alert('Sorry, Sign-In is down') }}>Sign In</Button>
             <Nav.Link className="cart-container">
-              <Image src="https://image.flaticon.com/icons/png/512/34/34627.png" id="cart" fluid></Image>
-              {this.state.cartItems > 0 ? <Badge variant="light">{this.state.cartItems}</Badge>: <></>}            
+              <Image src="https://image.flaticon.com/icons/png/512/34/34627.png" id="cart" fluid
+                style={{ height: "20%", width: "20%", padding: "2px", "min-width": "50px", "min-height": "50px" }}></Image>
+              {this.state.cartItems > 0 ? <Badge variant="light">{this.state.cartItems}</Badge> : <></>}
             </Nav.Link>
           </Nav>
         </Navbar>
