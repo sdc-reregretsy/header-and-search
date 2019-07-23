@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import navCats from '../../navCats.json'
 import Departments from './components/Departments.jsx'
-import { Navbar, Nav, Form, Button, InputGroup } from 'react-bootstrap';
+import { Navbar, Nav, Form, Button, InputGroup, Image, Badge } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import axios from 'axios';
 import config from '../../config.js';
@@ -13,11 +13,13 @@ class App extends React.Component {
     this.state = {
       searchTerm: '',
       allTitles: [],
-      idDict: {}
+      idDict: {},
+      cartItems: 0
     }
     this.handleSearchChange = this.handleSearchChange.bind(this);
     this.handleSearchReturn = this.handleSearchReturn.bind(this);
     this.bc = new BroadcastChannel('regretfully');
+    this.cartBC = new BroadcastChannel('added');
   }
 
   componentDidMount() {
@@ -66,11 +68,19 @@ class App extends React.Component {
     this.setState({ allTitles: titleArr, idDict: titleDict });
   }
 
+  addToCart() {
+    this.setState({ cartItems: this.state.cartItems + 1 })
+  }
+
 
   render() {
 
     this.bc.onmessage = function (ev) {
       console.log(ev.data)
+    }
+
+    this.cartBC.onmessage = (ev) => {
+      this.addToCart();
     }
 
     return (
@@ -88,7 +98,7 @@ class App extends React.Component {
                 onChange={(selected) => { this.handleSearchChange(selected) }}
                 id="typeahead-search"
                 ref={(typeahead) => this.typeahead = typeahead}
-                onKeyDown={(event) => {this.handleSearchReturn(event)}}
+                onKeyDown={(event) => { this.handleSearchReturn(event) }}
                 selectHintOnEnter={true}
               />
               <InputGroup.Append>
@@ -107,6 +117,11 @@ class App extends React.Component {
             <Nav.Link className="navLink" onClick={() => { alert('Under Construction: Come Back Later') }}>Sell on RegrEtsy</Nav.Link>
             <Nav.Link className="navLink" onClick={() => { alert('Sorry, Registration is Down') }}>Register</Nav.Link>
             <Button variant="outline-success" onClick={() => { alert('Sorry, Sign-In is down') }}>Sign In</Button>
+            <Nav.Link className="cart-container">
+              <Image src="https://image.flaticon.com/icons/png/512/34/34627.png" id="cart" fluid
+                style={{ height: "20%", width: "20%", padding: "2px", "min-width": "50px", "min-height": "50px" }}></Image>
+              {this.state.cartItems > 0 ? <Badge variant="light">{this.state.cartItems}</Badge> : <></>}
+            </Nav.Link>
           </Nav>
         </Navbar>
         <Navbar expand="lg">
