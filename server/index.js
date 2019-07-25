@@ -1,5 +1,5 @@
 const express = require('express');
-const db = require('../database');
+const db = require('../database/queries.js');
 const bodyParser = require('body-parser');
 const app = express();
 const cors = require('cors');
@@ -8,13 +8,14 @@ const PORT = process.env.PORT || 3000;
 const compression = require('compression');
 
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}))
 app.use(cors());
 app.use(compression());
 
 app.use('/', express.static('./client/dist'));
 
 app.get('/search', (req, res) => {
-  db.getAllItems((err, result) => {
+  db.getItems((err, result) => {
     if (err) {
       res.status(404).send('Error, no records found');
     } else {
