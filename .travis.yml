@@ -6,7 +6,7 @@ language: node_js
 node_js:
   - 'stable'
 script:
-  - ./tests/init-db.sh
+  - /Users/garyblaser/workspace/header-and-search/tests/init-db.sh
   - npm run test
 cache:
  directories:
