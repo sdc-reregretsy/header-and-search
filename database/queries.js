@@ -9,7 +9,7 @@ const pool = new Pool({
 })
 
 const getItems = (cb) => {
-  pool.query(`SELECT * FROM items LIMIT 100`, (err, res) => {
+  pool.query(`SELECT * FROM items LIMIT 1`, (err, res) => {
     if (err) {
       cb(err)
     } else {
