@@ -1,6 +1,6 @@
 before_script:
-  - psql -c 'create database postgres;'
-  - psql -d postgres -c 'CREATE TABLE items (id text unique,product_name text);'
+  - psql -c 'create database search;'
+  - psql -d search -c 'CREATE TABLE items (id text unique,product_name text);'
 sudo: true
 language: node_js
 node_js:
