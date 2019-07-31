@@ -1,0 +1,15 @@
+before_script:
+  - psql -c 'create database search;'
+  - psql -d search -c 'CREATE TABLE items (id text unique,product_name text,_id integer);'
+sudo: true
+language: node_js
+node_js:
+  - 'stable'
+script:
+  - ./tests/init-db.sh
+  - npm run test
+cache:
+ directories:
+   - 'node_modules'
+services:
+ - postgresql

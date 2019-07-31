@@ -5,7 +5,7 @@ import Departments from './components/Departments.jsx'
 import { Navbar, Nav, Form, Button, InputGroup, Image, Badge } from 'react-bootstrap';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import axios from 'axios';
-import config from '../../config.js';
+// import config from '../../config.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -23,9 +23,10 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log('Searching for db items at:', config.URL)
-    axios.get(`${config.URL}/search`)
+    console.log('Searching for db items at:')
+    axios.get(`/search`)
       .then((result) => {
+        console.log('DB returned', result.data)
         this.handleItems(result.data);
       })
       .catch((err) => {
@@ -62,8 +63,8 @@ class App extends React.Component {
     const titleArr = [];
     const titleDict = {};
     for (let element of items) {
-      titleDict[element.title] = element.listing_id;
-      titleArr.push(element.title);
+      titleDict[element.product_name] = element.id;
+      titleArr.push(element.product_name);
     }
     this.setState({ allTitles: titleArr, idDict: titleDict });
   }
@@ -119,7 +120,7 @@ class App extends React.Component {
             <Button variant="outline-success" onClick={() => { alert('Sorry, Sign-In is down') }}>Sign In</Button>
             <Nav.Link className="cart-container">
               <Image src="https://image.flaticon.com/icons/png/512/34/34627.png" id="cart" fluid
-                style={{ height: "20%", width: "20%", padding: "2px", "min-width": "50px", "min-height": "50px" }}></Image>
+                style={{ height: "20%", width: "20%", padding: "2px", "minWidth": "50px", "minHeight": "50px" }}></Image>
               {this.state.cartItems > 0 ? <Badge variant="light">{this.state.cartItems}</Badge> : <></>}
             </Nav.Link>
           </Nav>
