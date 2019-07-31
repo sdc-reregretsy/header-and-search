@@ -5,7 +5,10 @@ const pool = new Pool({
 })
 
 const getItems = (cb) => {
-  pool.query(`SELECT * FROM items LIMIT 1`, (err, res) => {
+  let random = Math.floor(Math.random() * 9999900)
+  console.log(random)
+
+  pool.query(`SELECT id, product_name FROM items WHERE _id>${random} AND _id<${random}+101 ORDER BY _id`, (err, res) => {
     if (err) {
       cb(err)
     } else {

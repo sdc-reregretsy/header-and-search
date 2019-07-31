@@ -42,7 +42,7 @@ describe('Test DB query: GET /search', () => {
     expect(result.status).toBe(200)
   });
 
-  test('responds with 100 items', () => {
+  test('responds with 1 items', () => {
     expect(result.body.length).toBe(100)
   });
 
@@ -50,7 +50,7 @@ describe('Test DB query: GET /search', () => {
 
 describe('Test non-existent post route: POST /', () => {
   let result;
-  beforeAll(async () => {
+  beforeAll(async () => { 
     result = await request(app).post('/');
   });
 
